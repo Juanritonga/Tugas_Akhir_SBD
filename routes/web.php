@@ -4,6 +4,7 @@ use App\Http\Controllers\BarangController;
 use App\Http\Controllers\GudangController;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\KeteranganController;
 use Illuminate\Support\Facades\Route;
 
@@ -51,5 +52,10 @@ Route::get('/restore', [BarangController::class, 'softIndex'])->name('restore');
 
 Route::get('/', [LoginController::class, 'login'])->name('login');
 Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+Route::get('home', [BarangController::class, 'index'])->name('home')->middleware('auth');
+Route::get('/logout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
+
+Route::get('/register', [RegisterController::class, 'register'])->name('register');
+Route::post('register', [RegisterController::class, 'store'])->name('actionRegister');
 Route::get('home', [BarangController::class, 'index'])->name('home')->middleware('auth');
 Route::get('/logout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');

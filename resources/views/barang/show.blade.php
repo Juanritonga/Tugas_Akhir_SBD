@@ -33,16 +33,16 @@
                 <input type="text" class="form-control" id="harga" name="harga" value="{{ $data->harga }}" readonly>
             </div>
             <div class="mb-3">
-                <label for="stock" class="form-label">stock</label>
+                <label for="stock" class="form-label">Stock</label>
                 <input type="text" class="form-control" id="stock" name="stock" value="{{ $data->stock }}" readonly>
             </div>
             <div class="mb-3">
-                <label for="id_gudang" class="form-label">ID gudang</label>
-                <input type="text" class="form-control" id="id_gudang" name="id_gudang" value="{{ $data->id_gudang }}" readonly>
+                <label for="nama_gudang" class="form-label">Nama Gudang</label>
+                <input type="text" class="form-control" id="nama_gudang" name="nama_gudang" value="{{ $data->nama_gudang }}" readonly>
             </div>
             <div class="mb-3">
-                <label for="id_store" class="form-label">ID Supplier</label>
-                <input type="text" class="form-control" id="id_store" name="id_store" value="{{ $data->id_store }}" readonly>
+                <label for="nama_store" class="form-label">ID Store</label>
+                <input type="text" class="form-control" id="nama_store" name="nama_store" value="{{ $data->nama_store }}" readonly>
             </div>
             <div class="text-center">
             <a href="{{ route('barang.index') }}" type="button" class="btn btn-primary rounded-3" >Back</a>

@@ -47,7 +47,7 @@
             </div>
             </div>
 			<div class="text-center">
-				<input type="submit" class="btn btn-primary" value="Ubah" />
+				<input type="submit" class="btn btn-primary" value="Change" />
 			</div>
 		</form>
 	</div>

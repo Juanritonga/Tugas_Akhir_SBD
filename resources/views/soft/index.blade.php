@@ -1,7 +1,7 @@
 @extends('menu')
 
 @section('container')
-<h4 class="mt-5">Data Barang Terhapus</h4>
+<h4 class="mt-5 text-center">Data Barang Terhapus</h4>
 
 <table id="table_id" class="table table-hover mt-2">
     <thead>

@@ -52,8 +52,7 @@ class BarangController extends Controller
     }
     public function show($id)
         {
-        $data = DB::select('select * from barangs b inner join gudangs g on b.id_gudang = g.id_gudang inner join stores s on b.id_store = s.id_store WHERE id_barang = :id',[$id])[0];
-            // dd($data->pasien_nama);
+        $data = DB::select('select * from barang b inner join gudang g on b.id_gudang = g.id_gudang inner join store s on b.id_store = s.id_store WHERE id_barang = :id',[$id])[0];
             return view('barang.show', [
                 'data' => $data,
             ]);
@@ -129,5 +128,5 @@ class BarangController extends Controller
             'datas' => $datas
         ]);
     }
-    
+
 }

@@ -71,7 +71,7 @@
             margin-left: -15rem;
         }
         }
-        </style>  
+        </style>
                 <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <!-- Styles -->
@@ -81,46 +81,44 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
-        </style>  
+        </style>
     </head>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
-    <body>        
+    <body>
         <div class="d-flex" id="wrapper">
         <!-- Page Content -->
         <div id="page-content-wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <div style="background: LIGHTGREEN; font-size: 24px; color: black">SELAMAT DATANG DI ITEM STORE</div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-success border-bottom">
+            <div class="ms-2 text-center row justify-content-center" >
+            <div class= "ms-2"style="font-size: 24px; color: white">SELAMAT DATANG DI ITEM STORE</div>
+            </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                <a class="nav-link" href="{{route('barang.index')}}" class="list-group-item list-group-item-action bg-light">Barang</a>
+                <a href="{{route('barang.index')}}" class="ms-2 nav-link text-white btn btn-dark type=button">Barang</a>
                 </li>
                 <li class="nav-item active">
-                <a class="nav-link" href="{{route('gudang.index')}}" class="list-group-item list-group-item-action bg-light">Gudang</a>
+                <a href="{{route('gudang.index')}}" class="ms-2 nav-link text-white btn btn-dark type=button">Gudang</a>
                 </li>
                 <li class="nav-item active">
-                <a class="nav-link" href="{{route('store.index')}}" class="list-group-item list-group-item-action bg-light">Store</a>
+                <a href="{{route('store.index')}}" class="ms-2 nav-link text-white btn btn-dark type=button">Store</a>
                 </li>
                 <li class="nav-item active">
-                <a class="nav-link" href="{{route('keterangan.index')}}" class="list-group-item list-group-item-action bg-light">Keterangan</a>
+                <a href="{{route('keterangan.index')}}" class="ms-2 nav-link text-white btn btn-dark type=button">Keterangan</a>
                 <li class="nav-item active">
-                <a class="nav-link" href="{{route('softDelete')}}">Recycle Bin<span class="sr-only">(current)</span></a>
+                <a class="ms-2 nav-link text-white btn btn-dark type=button" href="{{route('softDelete')}}">Trash<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Akun
-                </a>
+                <a class="ms-2 nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="/logout">Logout</a>
                 </div>
                 </li>
-            </ul>
-            </div>
         </nav>
         <div class="container-fluid" style='margin-top: 10px'>
-            @yield('container')
+        @yield('container')
         </div>
         </div>
         <!-- /#page-content-wrapper -->

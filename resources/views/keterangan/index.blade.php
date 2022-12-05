@@ -1,7 +1,7 @@
 @extends('menu')
 
 @section('container')
-<h4 class="mt-5">Keterangan</h4>
+<h4 class="mt-5 text-center">Keterangan</h4>
 
 @if($message = Session::get('success'))
     <div class="alert alert-success mt-3" role="alert">
